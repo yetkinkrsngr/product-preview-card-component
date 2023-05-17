@@ -56,6 +56,7 @@
       margin-left: 50px;
       margin-top:40px;
       color: hsl(212, 21%, 14%);
+      opacity: .6;
       
     }
     #header-big{
@@ -107,7 +108,95 @@
       font-weight: 700;
       font-size: 14px;
       left: 5px;
+      
     }
+    @media (max-width: 850px) {
+      .box{
+        margin-left: 5%;
+        margin-top: 5%;
+      }
+
+    
+    }
+    @media (max-width: 650px) {
+      .box{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+      #price-small{
+       margin-top:-100px;
+       margin-left: 50px;
+      }
+      #header-small{
+      font-size: 12px;
+      margin-left: 50px;
+      margin-top:10px;
+
+      
+    }
+      
+    #header-big{
+      font-size: 18px;
+      margin-left:50px;
+
+    }
+    #paragraf{
+      font-size: 12px;
+      margin-left: 50px;
+    }
+    #btn{
+      margin-top: 50px;
+      margin-left:50px;
+
+    }
+  }
+
+  @media (max-width: 376px) {
+    .box{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      height: auto;
+      width: auto;
+      border-radius: 30px;
+    }
+    .left-side-box{
+      visibility: none;
+      background-image: url("images/image-product-mobile.jpg");
+      height: 300px;
+      width: 355px;
+      border-radius: 30px;
+    }
+    .left-side-box img{
+      border-radius: 25px 25px 0 0;
+    }
+    #header-big{
+      width: 250px;
+      font-size: 26px;
+     border: 1px solid red;
+    }
+    #paragraf{
+      opacity: .6;
+      margin-top: -15px;
+      width: 250px;
+    }
+    #price-small{
+      position: relative;
+      left: 150px;
+      top: 5px;
+    }
+    #price-big{
+      position: relative;
+      bottom: 35px;
+    }
+    #btn{
+      display: block;
+      width: 250px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+  }
     .attribution { font-size: 11px; text-align: center;margin-top: 8%; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
